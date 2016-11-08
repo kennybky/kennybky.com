@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="scripts/jquery-3.1.1.js"></script>
+    <link href="mobile.css" rel="stylesheet" media="only screen and (min-width: 320px) and (max-width : 719px)" />
+    <link href="tablet.css" rel="stylesheet" media="only screen and (min-width : 720px) and (max-width: 1023px)" />
+    <link href="main.css"   rel="stylesheet" media="only screen and (min-width : 1024px)"/>
+	<meta charset="utf-8" />
+    <script>
+        $(document).ready(function () {
+            $(document).focus;
+            $(".menubar").click(function displayMenu() {
+                var menu = document.getElementById('menu');
+                var menubar = document.getElementById('menubar');
+                var show = menubar.children[0]
+                var hide = menubar.children[1];
+                if (menu.style.visibility == "") {
+                    menu.style.visibility = "hidden";
+                }
+                if (menu.style.visibility == "hidden") {
+                    menu.style.visibility = "visible";
+                    show.style.display = "none";
+                    hide.style.display = "inline";
+                } else {
+                    menu.style.visibility = "hidden";
+                    show.style.display = "inline";
+                    hide.style.display = "none";
+                }
+
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    <header id="header">
+            <div id="menubar">
+                <a class="menubar">&#9776;</a>
+                <a class="menubar">&#10005;</a>
+                <span>Menu</span>
+            </div>
+        <h1>
+            NewsCorp
+        </h1>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><input type="search" placeholder="Search here" /></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Out of Ideas</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        
+    </main>
+    <aside id="adverts"></aside>
+    
+
+    <footer>
+        <h3>Copyright &copy; Kenny 2017</h3>
+        <p>Terms Of Use | Privacy Policy | Advertize with Us | About Us | News Letters 
+        | Help </p>
+    </footer>
+    <script type="text/javascript" src="scripts/content.js"></script>
+</body>
+</html>

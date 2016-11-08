@@ -1,0 +1,56 @@
+﻿body {
+    background: radial-gradient(hsl(0, 0%, 50%), hsl(0, 7%, 44%));
+}
+header {
+    background: black;
+    color: white;
+    height:auto;
+    padding:10px;
+
+}
+header h1 {
+    color:white;
+    font: 1.5em Arial bold;
+}
+
+nav {
+    border: 1px blue outset; 
+    position:absolute;
+    top: 200px;
+    left: 100px;
+    width:80%;
+    height:auto;
+    display:flex;
+    flex-flow: row wrap;
+    padding:10px;
+}
+
+footer {
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    left:5px;
+    text-align:start;
+    background: black;
+    color: white;
+    height:auto;
+    padding:10px;
+}
+
+a {
+    text-decoration:none;
+    height: 300px;
+    margin: 2.5%;
+    padding: 10px;
+    width: 15%;
+    height:auto;
+    box-sizing:border-box;
+}
+
+a img {
+    width:100%;
+}
+
+img:hover {
+    transform:scale(2,2);
+}
