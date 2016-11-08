@@ -1,0 +1,155 @@
+﻿#header {
+    background:radial-gradient(hsl(0, 70%, 50%), hsl(0, 100%, 70%));
+    position:fixed;
+    top:0px;
+    left:1px;
+    height:50px;
+    width:100%;
+    box-sizing:border-box;
+    z-index:5;
+}
+#header h1 {
+    color:hsl(0, 100%, 100%);
+    float:left;
+    margin:0px 0px 0px 50px;
+    padding:5px;
+    height:100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing:border-box;
+}
+#menubar {
+        background: hsl(0, 100%, 0%);
+        float:left;
+        padding:5px 10px 5px 10px;
+        font-size:1.5em;
+        height:100%;
+        width:auto;
+        color:white;
+        box-sizing:border-box;
+    }
+
+
+    #menu {
+        visibility:hidden;
+        position:fixed;
+        top:50px;
+        left:0px;
+        padding: 0px 10px 10px 10px;
+        width:auto;
+        height: auto;
+        color: hsl(0, 0%, 100%);
+        box-sizing: border-box;
+        background: hsl(0, 100%, 0%);
+    }
+    
+
+        
+
+        #menubar a {
+        text-decoration: none;
+        color: white;
+        }
+
+        #menubar a:nth-of-type(2) {
+            display:none;
+        }
+
+        #menu li input {
+            position:relative;
+            right:30px;
+            height: 30px;
+            font-size: 12px;
+        }
+
+        #menu ul {
+            width:auto;
+            display: flex;
+            flex-flow: column wrap;
+            list-style: none;
+            font-size: 1em;
+        }
+
+        #menu a {
+            text-decoration:none;
+            color:white;
+        }
+
+
+
+            #menu ul li {
+                width:100%;
+                border-bottom: solid;
+                line-height:3em;
+            }
+
+    
+
+    #main {
+        background: hsl(0, 0%, 99%);
+        border-left: 5px double grey;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius:10px;
+        padding:10px;
+        float: right;
+        width: 67%;
+        height: auto;
+        margin: 50px 1.5% 0px 0px;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+        #main article {
+            height:auto;
+            border-bottom: 1px #ff1122 solid;
+            display:flex;
+            flex-flow:column;
+        }
+
+        #main article img {
+            margin: 0px 20px 10px 0px;
+            height: 250px;
+            width:400px;
+            float:left;
+        }
+
+        #main article p {
+            height:auto;
+            word-spacing:5px;
+            text-align:justify;
+        }
+
+
+       
+        section {
+            height:auto;
+        }
+
+    article h1 {
+        text-align: center;
+    }
+
+    #adverts {
+        float: right;
+        margin: 50px 1.5% 0px 00px;
+        width: 30%;
+        height: 200px;
+        background: hsl(100, 100%, 100%);
+        box-sizing: border-box;
+    }
+
+
+footer {
+        background: hsl(0, 1%, 0%);
+        clear: both;
+        color: white;
+        bottom: 0%;
+        height: auto;
+        width: 100%;
+        padding: 0px 0px 10px 10px;
+        text-align: left;
+    }
+
+        footer p {
+            word-spacing: 10px;
+        }
