@@ -1,0 +1,30 @@
+{ "speakers" : [
+  {
+    "name":"breakfast",
+    "desc":"Our delicious continental breakfast offers a variety of choices and go really well with a hot cup of coffee or cocoa!" 
+  },
+  {
+    "name":"Coffeecup",
+    "desc":"We are here to serve you with with a smile. Our coffee smiles too!"
+  },
+  {
+    "name":"crafted",
+    "desc":"Our signature crafted beverages are creamy and delicious"
+  },
+  {
+    "name":"barista",
+    "desc":"Our baristas are always inventing new styles and flavours tailored to your taste."
+  },
+  {
+    "name":"study",
+    "desc":"Our enviroment is a nice place to sit in a corner and read a book, just relax and enjoy a cup of coffee/"
+  },
+  {
+    "name":"beans",
+    "desc":"We grow our own coffee beans, which enjoys months of sunshine before being harvested ground, and put to use. "
+  },
+  {
+    "name":"dessert",
+    "desc":"We offer mouthwatering desserts cakes topped with whipped cream or icings"
+  }
+]}
