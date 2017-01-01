@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<script id="speakerstpl" type="text/template">
+    {{#images}}
+    <div class="jumbotron">
+        <img src="images/carousel/{{name}}.jfif"/>
+    </div>
+    {{/images}}
+</script>
+
+<div id="carousel">
+  
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Computer Services</h2>
+        <p>
+            Transoft Solutions perform laptop and personal computer repairs, including services such as software 
+            installation and updates, troubleshooting etc.
+        </p>
+        <p><a class="btn btn-default" href="~/Appointments/Create">Make an Appointment &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Consulting</h2>
+        <p>Transoft Solutions offers business consultancies such as database solutions, IT Support in order to make your busineess run smoothly</p>
+        <p><a class="btn btn-default" href="Home/About">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Products</h2>
+        <p>We also sell computers, and various accessories at affordable prices.</p>
+        <p><a class="btn btn-default" href="http://www.konga.com/computers-accessories-1">Shop now &raquo;</a></p>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery.cycle.all.js"></script>
+<script src="~/Scripts/mustache.js"></script>
+<script type="text/javascript">
+        $(function () {
+            $.getJSON('data.json', function (data) {
+                var template = $('#speakerstpl').html();
+                var html = Mustache.to_html(template, data);
+                $('#carousel').html(html);
+                $('#carousel').cycle({
+                    fx: 'fade',
+                    pause: 1,
+                    next: '#next_btn',
+                    prev: '#prev_btn',
+                    speed: 500,
+                    timeout: 10000
+                });
+            });//getJson
+        });//function
+</script>
