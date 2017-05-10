@@ -8,7 +8,8 @@ $(document).ready(function () {
                 var main = $('#main');
                 var article = $('<article></<article>');
                 article.append("<header>" + $(this).find("title").text() + "</header>");
-                article.append("<a href ='" +$(this).find("title").text() +"'>Go</a>");
+                article.append("<a href ='" + $(this).find("link").text() + "'>Go</a>");
+                article.append("<img src ='" + $(this).find("media:content").attr("url") + "'/>");
 
 
 
