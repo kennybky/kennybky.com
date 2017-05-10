@@ -6,39 +6,15 @@
     <link href="mobile.css" rel="stylesheet" media="only screen and (min-width: 320px) and (max-width : 719px)" />
     <link href="tablet.css" rel="stylesheet" media="only screen and (min-width : 720px) and (max-width: 1023px)" />
     <link href="main.css"   rel="stylesheet" media="only screen and (min-width : 1024px)"/>
+    <script src="scripts/content.js"></script>
 	<meta charset="utf-8" />
-    <script>
-        $(document).ready(function () {
-            $(document).focus;
-            $(".menubar").click(function displayMenu() {
-                var menu = document.getElementById('menu');
-                var menubar = document.getElementById('menubar');
-                var show = menubar.children[0]
-                var hide = menubar.children[1];
-                if (menu.style.visibility == "") {
-                    menu.style.visibility = "hidden";
-                }
-                if (menu.style.visibility == "hidden") {
-                    menu.style.visibility = "visible";
-                    show.style.display = "none";
-                    hide.style.display = "inline";
-                } else {
-                    menu.style.visibility = "hidden";
-                    show.style.display = "inline";
-                    hide.style.display = "none";
-                }
-
-            });
-        });
-        
-    </script>
 </head>
 <body>
     <header id="header">
             <div id="menubar">
-                <a class="menubar">&#9776;</a>
-                <a class="menubar">&#10005;</a>
-                <span>Menu</span>
+                <span>&#9776;</span>
+                <span style="display: none">&#10005;</span>
+				Menu
             </div>
         <h1>
             NewsCorp
@@ -57,7 +33,11 @@
         </ul>
     </nav>
     <main id="main">
-        
+       
+		
+		
+		
+		
     </main>
     <aside id="adverts"></aside>
     
@@ -67,6 +47,5 @@
         <p>Terms Of Use | Privacy Policy | Advertize with Us | About Us | News Letters 
         | Help </p>
     </footer>
-    <script type="text/javascript" src="scripts/content.js"></script>
 </body>
 </html>
