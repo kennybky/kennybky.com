@@ -16,7 +16,7 @@ $(document).ready(function () {
                 section.append(img, p);
                 article.append(h1, h5, section);
                 main.append(article);
-                //console.log($(this).find('title').text());
+               
                 
             });
            
