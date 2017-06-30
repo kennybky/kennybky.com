@@ -18,15 +18,16 @@
     box-sizing:border-box;
 }
 #menubar {
-        background: hsl(0, 100%, 0%);
-        float:left;
-        padding:5px 10px 5px 10px;
-        font-size:1.5em;
-        height:100%;
-        width:7%;
-        color:white;
-        box-sizing:border-box;
-    }
+    background: hsl(0, 100%, 0%);
+    cursor: pointer;
+    float: left;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.5em;
+    height: 100%;
+    width: 7%;
+    color: white;
+    box-sizing: border-box;
+}
 
 
     #menu {
