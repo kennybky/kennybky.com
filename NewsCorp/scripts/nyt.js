@@ -7,15 +7,16 @@ $(document).ready(function () {
             var main = $('#main');
             var articles = data.articles;
             for (var i = 0; i < articles.length; i++) {
-                var article = $('<article></<article>');
-                var h1 = $("<h1></h1>").text(articles[i].title);
-                var h5 = $("<h5></h5>").text(articles[i].author);
-                var img = $('<img src="' + articles[i].urlToImage + '"/>');
+                var article = $('<article class="row"></<article>');
+                var h1 = $('<h3 class="text-center"></h3>').text(articles[i].title);
+                var h5 = $("<h5 class='text-right text-info'></h5>").text(articles[i].author);
+                var img = $('<img class="img-responsive" src="' + articles[i].urlToImage + '"/>');
                 var p = $("<p></p>").text(articles[i].description);
                 var link = $('<a href="' + articles[i].url + '">(read more..)</a>');
                 var section = $("<section></section>");
-                section.append(img, p, link);
-                article.append(h1, h5, section);
+                p.append(link);
+                section.append(h5,img, p);
+                article.append(h1, section);
                 main.append(article);
 
             }
