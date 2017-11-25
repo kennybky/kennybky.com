@@ -4,14 +4,16 @@
     box-sizing:border-box;
 }
 
+#container {
+  position:relative;
+}
+
 header {
     border-bottom: 5px brown outset;
     background:linear-gradient(#3c371c, #fff);
     width:100%;
-    height:auto;
-    margin: 0px;
     text-align:center;
-    padding:1px;
+    padding:1%;
     box-sizing:border-box;
 }
 
@@ -90,38 +92,26 @@ main header {
 
 
 footer{
-   background:linear-gradient(#3c371c, #fff);
+   background: white;
     border-top: 5px #650 outset;
-    width:100%;
-    text-align:center;
-    padding:10px 0px 10px 0px;
+    padding:10px 10px 10px 10px;
 }
 
-#samplevid {
-    width: 100%;
+footer ul{
+  list-style: none;
+  display:flex;
 }
 
-section {
-   background:#222200;
-   padding:5%:
-   width:100%;
-   height:auto;
-   box-sizing:border-box;
-   color:white;
-   width:100%;
-   height:auto;
-   border: 1px solid white;
-   box-sizing:border-box;
-   text-align: center;
-  }
+footer ul li {
+  margin:10px;
+}
 
-section p {
-    margin:10px;
+footer p {
+  text-align: center
 }
-section nav {
-   margin:10px;
-}
-section button {
-border:solid;
-}
+
+
+
+
+
 
