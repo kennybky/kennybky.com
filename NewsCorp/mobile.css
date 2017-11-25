@@ -8,6 +8,11 @@
     box-sizing:border-box;
     z-index:5;
 }
+
+.container {
+    position:relative;
+    width:100%;
+}
 #header h1 {
     color:hsl(0, 100%, 100%);
     float:left;
@@ -30,7 +35,7 @@
 
 
     #menu {
-        visibility:hidden;
+        display: none;
         position:fixed;
         top:50px;
         left:0px;
@@ -42,6 +47,9 @@
         background: hsl(0, 100%, 0%);
     }
     
+    .hidden {
+    display:none;
+}
 
         
 
@@ -54,12 +62,7 @@
             display:none;
         }
 
-        #menu li input {
-            position:relative;
-            right:30px;
-            height: 30px;
-            font-size: 12px;
-        }
+        
 
         #menu ul {
             width:auto;
@@ -87,7 +90,7 @@
     main {
         background: hsl(0, 0%, 99%);
         width: 80%;
-        height: auto;
+        height: 30%x;
         margin: 50px 5% 0px 5%;
         display: flex;
         flex-flow: column;
@@ -114,9 +117,6 @@
     }
 
     #adverts {
-        border-top: 5px double grey;
-        border-top-right-radius: 10px;
-        border-top-left-radius:10px;
         margin: 50px 5% 0px 5%;
         width: 80%;
         height: 200px;
@@ -126,16 +126,11 @@
 
 
 footer {
-        background: hsl(0, 1%, 0%);
+        background: black;
         clear: both;
         color: white;
         bottom: 0%;
         height: auto;
-        width: 100%;
         padding: 0px 0px 10px 10px;
-        text-align: left;
+        text-align: center;
     }
-
-        footer p {
-            word-spacing: 10px;
-        }

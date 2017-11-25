@@ -1,56 +1,66 @@
 ﻿body {
-    background: radial-gradient(hsl(0, 0%, 50%), hsl(0, 7%, 44%));
+   background: hsl(200, 100%, 99%);
+}
+
+.container {
+    position:relative;
+    min-height:800px;
 }
 header {
-    background: black;
-    color: white;
-    height:auto;
-    padding:10px;
-
+    background-color: white;
+position:relative;
+padding:10px;
+border-bottom: 1px solid gray;
 }
 header h1 {
-    color:white;
-    font: 1.5em Arial bold;
+    text-align: center;
+    font: 2.5em Arial bold;
 }
 
-nav {
-    border: 1px blue outset; 
-    position:absolute;
-    top: 200px;
-    left: 100px;
-    width:80%;
-    height:auto;
+.grid {
+    position:relative;
+    top:50px;
+    padding:1% 5% 1% 5%;
     display:flex;
+    justify-content: space-between;
     flex-flow: row wrap;
-    padding:10px;
-}
-
-footer {
-    position:absolute;
-    bottom:2px;
-    right:5px;
-    left:5px;
-    text-align:start;
-    background: black;
-    color: white;
-    height:auto;
-    padding:10px;
-}
-
-a {
-    text-decoration:none;
-    height: 300px;
-    margin: 2.5%;
-    padding: 10px;
-    width: 15%;
-    height:auto;
+    width:100%;
     box-sizing:border-box;
 }
 
-a img {
-    width:100%;
+.col {
+   border:solid;
+    width: 25%;
 }
 
+.col a {
+    height: 80%;
+    overflow:hidden;
+}
+
+.col a img {
+    width:100%;
+
+}
+.site-desc {
+    text-align:center;
+}
+
+
+
+footer {
+    position:absolute;
+    bottom:0px;
+   width:100%;
+   text-align: center;
+   color:#2233ff;
+}
+
+a {
+    
+}
+
+
 img:hover {
-    transform:scale(2,2);
+    transform:scale(1.1,1.1);
 }

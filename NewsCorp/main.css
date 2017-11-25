@@ -8,8 +8,12 @@
     box-sizing:border-box;
     z-index:5;
 }
+.container {
+    position:relative;
+    width:100%;
+}
 #header h1 {
-    color:hsl(0, 100%, 100%);
+    color:white;
     float:left;
     margin:0px 0px 0px 50px;
     padding:5px;
@@ -36,7 +40,7 @@
         top:50px;
         left:0px;
         padding: 0px 10px 10px 10px;
-        width:auto;
+        width:30%;
         height: auto;
         color: hsl(0, 0%, 100%);
         box-sizing: border-box;
@@ -57,12 +61,7 @@
 		
 		
 
-        #menu li input {
-            position:relative;
-            right:30px;
-            height: 30px;
-            font-size: 12px;
-        }
+        
 
         #menu ul {
             width:auto;
@@ -89,9 +88,6 @@
 
     #main {
         background: hsl(0, 0%, 99%);
-        border-left: 5px double grey;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius:10px;
         padding:10px;
         float: right;
         width: 67%;
@@ -136,23 +132,18 @@
         float: right;
         margin: 50px 1.5% 0px 00px;
         width: 30%;
-        height: 200px;
         background: hsl(100, 100%, 100%);
         box-sizing: border-box;
     }
 
 
 footer {
-        background: hsl(0, 1%, 0%);
+        background: black;
         clear: both;
         color: white;
-        bottom: 0%;
-        height: auto;
-        width: 100%;
         padding: 0px 0px 10px 10px;
-        text-align: left;
+        text-align: center;
+        padding:5px;
     }
 
-        footer p {
-            word-spacing: 10px;
-        }
+         

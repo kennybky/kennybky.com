@@ -8,6 +8,11 @@
     box-sizing:border-box;
     z-index:5;
 }
+
+.container {
+    position:relative;
+    width:100%;
+}
 #header h1 {
     color:hsl(0, 100%, 100%);
     float:left;
@@ -30,17 +35,20 @@
 
 
     #menu {
-        visibility:hidden;
+        display: none;
         position:fixed;
         top:50px;
         left:0px;
         padding: 0px 10px 10px 10px;
-        width:auto;
+        width:30%;
         height: auto;
         color: hsl(0, 0%, 100%);
         box-sizing: border-box;
         background: hsl(0, 100%, 0%);
     }
+    .hidden {
+    display:none;
+}
     
 
         
@@ -86,9 +94,6 @@
 
     #main {
         background: hsl(0, 0%, 99%);
-        border-left: 5px double grey;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius:10px;
         padding:10px;
         float: right;
         width: 67%;
@@ -147,9 +152,7 @@ footer {
         height: auto;
         width: 100%;
         padding: 0px 0px 10px 10px;
-        text-align: left;
+        text-align: center;
     }
 
-        footer p {
-            word-spacing: 10px;
-        }
+        
