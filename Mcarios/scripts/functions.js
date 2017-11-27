@@ -28,6 +28,8 @@
         }
          var group = params["group"]
          url += group + "?";
+
+         //construct parameters
          for (var key in params) {
          	if (params.hasOwnProperty(key) && key !="group") {
               url += key + "=" + params[key] + "&";
@@ -41,7 +43,7 @@
     }
 
 
-
+  //gets the url parameters
     function getUrlParameters() {
         var sPageURL = decodeURIComponent(window.location.search.substring(1)),
             sURLVariables = sPageURL.split('&');
@@ -58,6 +60,7 @@
             return params;
         }
 
+//Contains ajax call that loads data into main
     function load(category, param) { 
            url = constructUrl(category, param);
     $.ajax({
@@ -96,12 +99,12 @@
 
 
     	
-
+//closes the navigation meny when the 'x' is clixked
        $('#closebtn').click(function(){
          $('#mySideNav').css("visibility", "hidden");
     });
 
-
+//handles click event for tablinks
     $(".tablinks").click(function(evt){
        var i, tabcontent, tablinks;
         tablinks = $(".tablinks");
@@ -120,21 +123,22 @@
         
     });
 
+//called when user submits the search form
     $("#search-articles").submit(function (event) {
     	event.preventDefault();
     	param=  $( this ).serialize();
     	load(undefined, param)
     })
 
+//shows the navigatiom menu when the mouse enters
     $("#popout").hover(function(){
     	 $('#mySideNav').css("visibility", "visible");
     });
 
 
-
+//hides the navigation menu when the cursor leaves 
     $('#mySideNav').mouseleave(function(){
     	 $('#mySideNav').css("visibility", "hidden");
-    	  $('#popout').removeClass("active");
     });
 
 
