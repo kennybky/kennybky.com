@@ -116,7 +116,7 @@
             $(this).removeClass("active");
         });
         console.clear();
-        load(data);
+        load(data);//loads data
     }
         
         $(elem).addClass("active");
