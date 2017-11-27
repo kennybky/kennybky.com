@@ -2,7 +2,6 @@
 
     $(document).ready(function () {
 
-console.log(config.KEY);
       //load data into main
       load();
 
