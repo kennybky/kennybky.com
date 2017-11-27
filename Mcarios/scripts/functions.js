@@ -99,11 +99,10 @@
 
 
     	
-//closes the navigation meny when the 'x' is clixked
+//closes the navigation menu when element is clicked
        $('#closebtn').click(function(){
          $('#mySideNav').css("visibility", "hidden");
        });
-    
 
 //handles click event for tablinks
     $(".tablinks").click(function(evt){
