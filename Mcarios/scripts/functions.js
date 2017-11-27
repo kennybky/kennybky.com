@@ -102,6 +102,7 @@
 //closes the navigation meny when the 'x' is clixked
        $('#closebtn').click(function(){
          $('#mySideNav').css("visibility", "hidden");
+       }
     });
 
 //handles click event for tablinks
