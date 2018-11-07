@@ -7,7 +7,7 @@ $(document).ready(function () {
             var main = $('#main');
             var articles = data.articles;
             for (var i = 0; i < articles.length; i++) {
-                var article = $('<article class="row"></<article>');
+                var article = $('<article class="row"><<article>');
                 var h1 = $('<h3 class="text-center"></h3>').text(articles[i].title);
                 var h5 = $("<h5 class='text-right text-info'></h5>").text(articles[i].author);
                 var img = $('<img class="img-responsive" src="' + articles[i].urlToImage + '"/>');
