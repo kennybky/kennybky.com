@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Brownnose Cafe</title>
+    <link href="styles/default.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.1.1.js"></script>
+    <script src="scripts/jquery.cycle.all.js"></script>
+    <script src="scripts/mustache.js"></script>
+    <script src="scripts/script.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div id="container">
+    <header>
+        <h1>The Brownose Cafe</h1>
+       
+    </header>
+    <nav id="menu">
+      <a href="">Menu</a>
+      <a href="">Home</a>
+       <a href="">About Us</a>
+        <a href="">Order`</a>
+        <a href="">Contact Us</a>
+        <a href="">Donate</a>
+        <h6>
+            <label>Search this site</label>
+        <input type="search"/>
+            </h6>
+        <a href="#" id="prev_btn">&laquo;</a>
+        <a href="#" id="next_btn">&raquo;</a>
+    </nav>
+    <main>
+        <div id="carousel"></div>
+
+      <!-- <section>
+            <video src="images/ethos.mp4" id="samplevid" controls >
+                HTML5 video is not supported
+            </video>
+           <p>Watch our brief presentation</p>
+        </section>-->
+    
+    <script id="speakerstpl" type="text/template">
+        {{#speakers}}
+        <article id="speakers">
+            <img src="images/{{name}}_tn.jpg" alt="Photo of {{name}}"  />
+            <p>{{desc}}</p>
+        </article>
+        {{/speakers}}
+    </script>
+</main>
+       
+    <footer>
+        
+            <nav>
+                <ul>
+          <li> <a href=""><img src="images/facebook.svg" /></a> </li>
+          <li> <a href=""><img src="images/social-1_logo-flickr.svg" /></a> </li>
+          <li> <a href=""><img src="images/social-1_logo-google-plus.svg" /></a> </li>
+           <li><a href=""><img src="images/social-1_logo-twitter.svg"/></a> </li>
+           <li> <a href=""><img src="images/social-1_logo-pinterest.svg" /></a> </li>
+        </ul>
+                </nav>
+           
+        
+
+        <p>Copyright &copy; 2016 Adekola Togunloju all rights reserved</p>
+    </footer>
+</div>
+</body>
+</html>
+
